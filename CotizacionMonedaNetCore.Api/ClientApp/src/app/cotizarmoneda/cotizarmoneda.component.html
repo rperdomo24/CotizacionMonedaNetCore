@@ -1,0 +1,41 @@
+<h1>Cotización con respecto a peso argentino</h1>
+<p *ngIf="!refrescarcomp"><em>Loading...</em></p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;" *ngIf="Dolar">
+        <img class="card-img-top" src="https://images.vexels.com/media/users/3/135830/isolated/preview/bd285f3c9cd012e5231f5b19f9ede627-signo-de-d--lar-3d-by-vexels.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Valor Dolar</h5>
+          <label></label>
+          <label> <strong>1</strong>{{Dolar.moneda}}</label>
+          <br>
+          <label><strong>{{Dolar.precio}}</strong> ARS</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;" *ngIf="Euro">
+        <img class="card-img-top" src="https://png.pngtree.com/element_our/png/20181114/euro-icon-png_239794.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Valor Euro</h5>
+          <label> <strong>1</strong>{{Euro.moneda}}</label>
+          <br>
+          <label><strong>{{Euro.precio}}</strong> ARS</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;" *ngIf="Real">
+        <img class="card-img-top" src="https://image.flaticon.com/icons/svg/32/32665.svg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Valor Real</h5>
+          <label> <strong>1</strong>{{Real.moneda}}</label>
+          <br>
+          <label><strong>{{Real.precio}}</strong> ARS</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
